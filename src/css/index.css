@@ -1,0 +1,143 @@
+
+body {
+    font: 15px "Open Sans", Calibri, Tahoma, Verdana, sans-serif;
+    color: #5b5b5b;
+    height: auto;
+    min-width: 0;
+    background: white;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 85px;
+  font-family: "PT Sans Narrow";
+  z-index: 10;
+  background: #ffffff;
+}
+.main-menu {
+  max-width: 1140px;
+  display: flex;
+}
+.main-menu-item {
+  text-transform: uppercase;
+}
+.main-menu-link {
+  text-decoration: none;
+}
+.content-separator {
+    position: relative;
+    margin: 40px 0;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+}
+.content-separator h1:after, .content-separator h1:before, .content-separator h2:after, .content-separator h2:before {
+    content: "";
+    position: absolute;
+    background: #c0d9e6;
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    top: 13px;
+    left: 0;
+}
+.content-separator:before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background: #c0d9e6;
+    left: 0;
+    right: 0;
+    top: 17px;
+}
+.content-separator h1, .content-separator h2 {
+    position: relative;
+    background: #fff;
+    z-index: 1;
+    text-transform: uppercase;
+    color: #00547d;
+    font-size: 34px;
+    padding: 0 23px;
+    display: inline-block;
+    font-weight: 300;
+    margin: 0;
+}
+.content-separator h1:after, .content-separator h2:after {
+    right: -4px;
+    left: unset;
+}
+main,
+main.route {
+    margin-top: 90px;
+}
+
+.footer-separator {
+  position: relative;
+  text-align: center;
+  color: #ffffff;
+  font-size: 33px;
+  line-height: 45px;
+  margin: 40px 0 37px;
+}
+.footer-separator:before, .footer-separator:after {
+  content: '';
+  position: absolute;
+  background: #c0d9e6;
+  height: 1px;
+  top: 23px;
+}
+.footer-separator:after {
+  right: 0;
+  left: 50%;
+  margin-left: 110px;
+}
+.footer-separator:before {
+  left: 0;
+  right: 50%;
+  margin-right: 110px;
+}
+.footer-separator .separator-text {
+  display: inline-block;
+  padding: 0 25px;
+  position: relative;
+  text-transform: uppercase;
+}
+.footer-separator .separator-text:before, .footer-separator .separator-text:after {
+  content: '';
+  position: absolute;
+  background: #c0d9e6;
+  height: 9px;
+  width: 9px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  top: 19px;
+}
+.footer-separator .separator-text:after {
+  right: -2px;
+}
+.footer-separator .separator-text:before {
+  left: -2px;
+}
+
+.footer-partners-list {
+  text-align: center;
+  font-size: 0;
+  margin: 20px 0 30px 0;
+  height: 117px;
+  line-height: 113px;
+}
+.footer-partners-list .partners-list-item {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 20px;
+}
+.footer-partners-list .partners-list-link:hover {
+  text-decoration: none;
+}

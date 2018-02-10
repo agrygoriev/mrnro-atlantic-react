@@ -1,0 +1,95 @@
+
+.footer-separator {
+  position: relative;
+  text-align: center;
+  color: #ffffff;
+  font-size: 33px;
+  line-height: 45px;
+  margin: 40px 0 37px;
+}
+.footer-separator:before, .footer-separator:after {
+  content: '';
+  position: absolute;
+  background: #c0d9e6;
+  height: 1px;
+  top: 23px;
+}
+.footer-separator:after {
+  right: 0;
+  left: 50%;
+  margin-left: 110px;
+}
+.footer-separator:before {
+  left: 0;
+  right: 50%;
+  margin-right: 110px;
+}
+.footer-separator .separator-text {
+  display: inline-block;
+  padding: 0 25px;
+  position: relative;
+  text-transform: uppercase;
+}
+.footer-separator .separator-text:before, .footer-separator .separator-text:after {
+  content: '';
+  position: absolute;
+  background: #c0d9e6;
+  height: 9px;
+  width: 9px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  top: 19px;
+}
+.footer-separator .separator-text:after {
+  right: -2px;
+}
+.footer-separator .separator-text:before {
+  left: -2px;
+}
+
+.footer-partners-list {
+  text-align: center;
+  font-size: 0;
+  margin: 20px 0 30px 0;
+  height: 117px;
+  line-height: 113px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.footer-partners-list .partners-list-item {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 20px;
+}
+.footer-partners-list .partners-list-link:hover {
+  text-decoration: none;
+}
+.footer-content .copyright-text {
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+.copyright-text a,
+.footer-contact-info .item a {
+  /* text-decoration: none; */
+  color: #ffffff;
+}
+.footer-contact-info .item {
+    float: left;
+    width: auto;
+    flex: 1 1 33%;
+    text-align: center;
+}
+.footer-social-wrapper .facebook,.footer-social-wrapper .facebook:hover, .footer-social-wrapper .instagram, .footer-social-wrapper .instagram:hover, .footer-social-wrapper .vk, .footer-social-wrapper .vk:hover, .footer-social-wrapper .youtube, .footer-social-wrapper .youtube:hover, .icons-sprite {
+  background: url(../img/icons.png) no-repeat;
+}
+.footer-social-wrapper .facebook {
+    background-position: 0 -264px;
+    height: 23px;
+    width: 11px;
+}
