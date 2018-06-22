@@ -1,18 +1,33 @@
 {
   "name": "mrnro-atlantic-landing",
   "version": "0.1.0",
+  "description": "Marinero Atlantic landing with MERN stack",
+  "main": "server.js",
   "private": true,
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
     "google-map-react": "^0.29.0",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.1.6",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-router-dom": "^4.2.2",
-    "react-scripts": "1.1.0"
+    "react-scripts": "1.1.0",
+    "validator": "^10.4.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node server.js",
+    "serve": "react-scripts start",
+    "server": "nodemon server.js",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.5"
   }
 }
